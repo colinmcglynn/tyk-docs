@@ -1,0 +1,71 @@
+---
+date: 2017-03-22T11:52:07Z
+title: Create an Security Policy
+menu:
+  main:
+    parent: "Tutorials"
+weight: 2
+---
+<span data-filetype="mmark"></span>
+
+A security policy encapsulates several security options that can be applied to a Key. It acts as a template that can override individual sections of an API Key (or identity) in Tyk. A good example is if you had 10,000 API Keys issued, how would you ensure that all 10,000 users received an upgraded quota, or access to a new API that you have published?
+
+You could manually modify all 10,000 Keys, or you could apply a policy to each of those Keys when you create them, and then just modify the policy once.
+
+Policies can set:
+
+*   Access lists for API and versions
+*   Access lists for method and path (granular control)
+*   Rate limit for a user
+*   Quota for a user
+
+Each of these can also be overridden in isolation using the partitioning options. When partitioning a security policy, only one segment of the policy will be applied to the token. So, for example, if you need to set quotas and rate limits on a per client basis, but want to manage access control across all of your clients, a partitioned policy with only the ACL enabled would achieve this. Follow the tutorial for your installation.
+
+{{% tabs %}}
+{{% tab "Cloud" %}}
+{{./static/include/create-security-policy-include.md}}
+{{% /tab %}}
+{{% tab "Multi-Cloud" %}}
+
+> **NOTE**: Tyk Multi-Cloud has superseded our Hybrid offering. See [Tyk Multi-Cloud](https://tyk.io/api-gateway/cloud/#multi-cloud) for more details. You can get a free 30 day trial of Tyk Multi-Cloud.
+
+A security policy for Tyk Multi-Cloud is the same as one with Tyk Cloud and will be mirrored in your Multi-Cloud Gateways, follow the instructions below to generate a policy, within a few seconds, that policy will be available in your Multi-Cloud Gateways locally.
+
+{{./static/include/create-security-policy-include.md}}
+{{% /tab %}}
+{{% tab "On Premises" %}}
+{{./static/include/create-security-policy-include.md}}
+{{% /tab %}}
+{{% tab "Community Edition" %}}
+## <a name="create-a-file-based-policy"></a>Tutorial: Create a Policy with the Gateway API
+
+Adding a policy to a Community Edition Tyk Gateway is very easy. Polices are loaded into memory on load and so need to be specified in advanced in a file called `policies.json`. To add a policy, simply create or edit the `/policies/policies.json` file and add the policy object to the object array:
+
+```{.copyWrapper}
+{
+  "POLICYID": {
+    "access_rights": {
+      "{API-ID}": {
+        "allowed_urls": [],
+        "api_id": "{API-ID}",
+        "api_name": "{API-NAME}",
+        "versions": [
+            "Default"
+        ]
+    }
+  },
+  "active": true,
+  "name": "POLICY NAME",
+  "rate": 100,
+  "per": 1,
+  "quota_max": 10000,
+  "quota_renewal_rate": 3600,
+  "tags": ["Startup Users"]
+  }
+}
+```
+
+The above creates a new policy with a policy ID that you can define, with the rate limits, and security profile that grants access to the APIs listed in the `access_rights` section.
+{{% /tab %}}
+{{% /tabs %}}
+
