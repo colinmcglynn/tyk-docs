@@ -3,7 +3,7 @@ date: 2017-03-24T16:04:19Z
 title: Error Overview
 menu:
   main:
-    parent: "Analyse"
+    parent: "Analytics and Reporting"
 weight: 4 
 ---
 

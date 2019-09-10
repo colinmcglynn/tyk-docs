@@ -1,9 +1,11 @@
 ---
 date: 2017-03-23T14:29:56Z
 title: Security
-weight: 30
-menu: "main"
-url: "/security"
+weight: 1
+menu: 
+  main:
+    parent: "Basic Configuration and Security"
+url: "/basic-config-and-security/security"
 ---
 
 ## <a name="introduction"></a>Introduction

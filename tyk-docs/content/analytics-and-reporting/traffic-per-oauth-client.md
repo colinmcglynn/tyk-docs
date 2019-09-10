@@ -3,7 +3,7 @@ date: 2017-03-24T16:09:10Z
 title: Traffic per OAuth Client
 menu:
   main:
-    parent: "Analyse"
+    parent: "Analytics and Reporting"
 weight: 6 
 ---
 

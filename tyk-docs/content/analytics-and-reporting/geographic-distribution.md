@@ -3,7 +3,7 @@ date: 2017-03-24T16:12:54Z
 title: Geographic Distribution
 menu:
   main:
-    parent: "Analyse"
+    parent: "Analytics and Reporting"
 weight: 7 
 ---
 

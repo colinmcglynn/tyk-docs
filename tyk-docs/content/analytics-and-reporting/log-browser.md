@@ -3,7 +3,7 @@ date: 2017-03-24T16:05:56Z
 title: Log Browser
 menu:
   main:
-    parent: "Analyse"
+    parent: "Analytics and Reporting"
 weight: 5 
 ---
 

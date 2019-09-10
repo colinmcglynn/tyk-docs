@@ -3,7 +3,7 @@ date: 2017-03-24T15:49:56Z
 title: Traffic Overview
 menu:
   main:
-    parent: "Analyse"
+    parent: "Analytics and Reporting"
 weight: 1 
 ---
 

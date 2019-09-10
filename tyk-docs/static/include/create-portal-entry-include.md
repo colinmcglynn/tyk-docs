@@ -1,4 +1,4 @@
-## Tutorial: Add an API and Swagger based Docs to a Portal Catalogue
+## Add an API and Swagger based Docs to your Portal Catalogue
 
 You can use the Tyk Dashboard to create a portal that allows developers to access the APIs you create.
 

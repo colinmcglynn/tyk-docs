@@ -1,10 +1,11 @@
 ---
 date: 2017-03-24T12:52:17Z
 title: WebSockets
-menu:
+menu: 
   main:
-    parent: "Other Protocols"
-weight: 0 
+    parent: "Advanced Configuration"
+url: "/advanced-configuration/websockets"
+weight: 3 
 ---
 
 As of Tyk gateway v2.2, Tyk supports transparent WebSocket connection upgrades. To enable this feature, set the `enable_websockets` value to `true` in your `tyk.conf` file.

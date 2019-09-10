@@ -3,7 +3,7 @@ date: 2017-03-24T16:14:31Z
 title: Useful Debug Modes
 menu:
   main:
-    parent: "Analyse"
+    parent: "Analytics and Reporting"
 weight: 8 
 ---
 

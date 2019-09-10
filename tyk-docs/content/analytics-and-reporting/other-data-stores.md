@@ -3,7 +3,7 @@ date: 2017-03-24T16:28:03Z
 title: Other Data Stores
 menu:
   main:
-    parent: "Analyse"
+    parent: "Analytics and Reporting"
 weight: 10 
 ---
 

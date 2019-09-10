@@ -3,7 +3,7 @@ date: 2017-03-24T15:55:00Z
 title: Traffic per API
 menu:
   main:
-    parent: "Analyse"
+    parent: "Analytics and Reporting"
 weight: 2 
 ---
 

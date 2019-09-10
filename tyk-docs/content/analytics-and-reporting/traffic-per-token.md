@@ -3,7 +3,7 @@ date: 2017-03-24T16:00:33Z
 title: Traffic per Key
 menu:
   main:
-    parent: "Analyse"
+    parent: "Analytics and Reporting"
 weight: 3 
 ---
 
