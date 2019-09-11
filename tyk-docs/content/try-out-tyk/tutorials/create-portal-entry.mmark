@@ -19,7 +19,7 @@ weight: 4
 {{% tab "Multi-Cloud" %}}
 {{./static/include/create-portal-entry-include.md}}
 {{% /tab %}}
-{{% tab "On Premises" %}}
+{{% tab "On-Premises" %}}
 
 ## Add an API and Swagger based Docs to your Portal Catalogue
 

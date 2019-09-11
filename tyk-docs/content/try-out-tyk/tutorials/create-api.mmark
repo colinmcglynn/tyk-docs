@@ -93,7 +93,7 @@ docker run --restart always -v $cwd/confs:/etc/nginx/sites-enabled \
         $IMAGE
 ```
 {{% /tab %}}
-{{% tab "On Premises" %}}
+{{% tab "On-Premises" %}}
 {{./static/include/create-api-include.md}}[/START OMIT/,/END OMIT/]
 
 If the command succeeds, you will see:

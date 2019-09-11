@@ -35,7 +35,7 @@ Creating an API Key with Tyk Multi-Cloud is the same process as with Tyk Cloud. 
 {{./static/include/create-api-key-include.md}}
 
 {{% /tab %}}
-{{% tab "On Premises" %}}
+{{% tab "On-Premises" %}}
 {{./static/include/create-api-key-include.md}}
 
 You will see a response with your new key:

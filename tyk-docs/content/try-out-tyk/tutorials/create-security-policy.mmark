@@ -33,7 +33,7 @@ A security policy for Tyk Multi-Cloud is the same as one with Tyk Cloud and will
 
 {{./static/include/create-security-policy-include.md}}
 {{% /tab %}}
-{{% tab "On Premises" %}}
+{{% tab "On-Premises" %}}
 {{./static/include/create-security-policy-include.md}}
 {{% /tab %}}
 {{% tab "Community Edition" %}}

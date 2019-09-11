@@ -7,14 +7,9 @@ url: "/basic-config-and-security"
 ---
 
 
-Tyk comes in three powerful flavours: Cloud, Multi-Cloud and On-Premises. Each has its own strengths and reasons for deployment.
+This section covers methods for configuring and applying security methods to Tyk. the following subjects are covered:
 
-- [Tyk Cloud][1]: The fastest way to explore Tyk – no setup, no installations, just a straight-up cloud-based API gateway and proxy.
-- [Tyk Multi-Cloud][2]: Get the best of both worlds, manage things from our cloud but get one or more Tyk Gateway's in your infrastructure.
-- [Tyk On-Premises][3]: A full Tyk stack in your own infrastructure, it doesn't call home, it's all yours and you can do with it what you like. This is the most flexible Tyk deployment you could have.
-- [Tyk Community Edition][4]: Tyk Community Edition is the open-source API Gateway that is developed by our community and supported by our community members and advocates (with some help from the Tyk Technologies team).
-
- [1]: /docs/get-started/with-tyk-cloud
- [2]: /docs/get-started/with-tyk-hybrid
- [3]: /docs/get-started/with-tyk-on-premise
- [4]: /docs/get-started/with-tyk-community-edition
+* [Security](docs/basic-config-and-security/security/). This section includes how to apply security to your Tyk components, your APIs, and security policies.
+* [Control and Limit Traffic](/docs/basic-config-and-security/control-limit-traffic/). This section shows you how to apply quotas, rate limits (throttling) and size limits to your APIs.
+* [Reduce Latency](/basic-config-and-security/reduce-latency/). This section describes methods for reducing latency in your Tyk installation.
+* [Report, Monitor and Trigger Events](/docs/basic-config-and-security/report-monitor-trigger-events/). This section describes what event data you can include in your APIs, and how you can do manage them with the use of webhooks and custom JavaScript handlers. This section also cover the use of monitors for user and organisation quotas, as well as StatsD and NewRelic instrumentation.

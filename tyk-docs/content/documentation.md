@@ -12,46 +12,53 @@ diffTitle: true
 
 Our documentation helps you get the most out of your Tyk installation. It covers all aspects of using Tyk to manage your APIs.
 
-### Getting started
+### [Getting Started](/docs/getting-started/)
 
-We have installation and tutorials for all Tyk Editions:
+If you are new to Tyk, this section introduces you to our application and its components, introduces key concepts, deployment options and how to install Tyk for demo and PoC purposes.
 
-* [Cloud][1]
-* [Multi-Cloud][2]
-* [On-Premises][3]
-* [Community Edition][12]
+### [Try out Tyk](/docs/try-out-tyk/try-out-tyk/)
 
-Our tutorials cover all the subjects to get you started with Tyk, both using the Dashboard, and using our own APIs where available. From creating APIs to deploying your portal to your end users.
+We have some tutorials to get you up and running with Tyk, for all our editions.
+ 
+### [Basic Configuration and Security](/docs/basic-config-and-security/)
 
-Our documentation also covers the following (and more):
+This section covers methods for configuring and applying security methods to Tyk.
 
-### Concepts
+### [Analytics and Reporting](/docs/analytics-and-reporting/)
 
-The important [concepts][4] behind Tyk, helping you to understand the Tyk way of doing things. 
+How you can use the Tyk Dashboard's analytic functions.
 
-### Configuration
+### [Advanced Configuration](/docs/advanced-configuration/)
 
-How to [configure][5] Tyk to suit your requirements.
+This section covers topics such as integration with 3rd parties, using Single Sign On (SSO), how to transform traffic and manage multiple environments.
 
-### Analysis
+### [Tyk Configuration Reference](/docs/tyk-config-reference/)
 
-How to use Tyk's [analytics][6] tools.
+This section covers settings for all the Tyk components (Gateway, Dashboard, Pump, TIB, MDCB), plus some overall Tyk installation configuration options.
 
-### Customising Tyk
+### [Plugins](/docs/plugins/)
 
-How to [customise](https://tyk.io/docs/customise-tyk/plugins/) Tyk, using Rich Plugins and JavaScript Virtual Machine Middleware.
+How to customise your Tyk installation, with the use of Rich Plugins (Python, gRPC and LuaJIT) and JavaScript Middleware.
 
-### Portal Configuration
+### [Planning for Production](/docs/planning-for-production/)
 
-How to [personalise](https://tyk.io/docs/tyk-developer-portal/customise/) your Developer Portal.
+What to consider when installing Tyk in a production environment.
+
+### [Tyk Multi Data Centre Bridge (MDCB)](/docs/tyk-multi-data-centre/)
+
+How our separately licenced product allows you to use Tyk in the following manner:
+
+MDCB acts as a broker between Tyk Gateway Instances that are isolated from one another and typically have their own Redis DB.
+
+In order to manage physically separate Tyk Gateway clusters from a centralised location, Tyk MDCB needs to be used to provide a remote “back-end” for token and configuration queries.
 
 ### Tyk APIs
 
 How to use our APIs.
 
-* [REST API][9]
-* [Dashboard API][10]
-* [Dashboard Admin API][11]
+* [Gateway API](/docs/tyk-gateway-api/)
+* [Dashboard API](/docs/tyk-dashboard-api/)
+* [Dashboard Admin API](/docs/dashboard-admin-api/)
 
 ### Current Versions
 
@@ -69,16 +76,3 @@ Tyk has been tested on the following versions:
 
 * MongoDB 3.x and 4.0.x
 * Redis 2.8.x to 5.0.x
-
-  [1]: /docs/get-started/with-tyk-cloud/
-  [2]: /docs/get-started/with-tyk-multi-cloud/
-  [3]: /docs/get-started/with-tyk-on-premise/
-  [4]: /docs/concepts/
-  [5]: /docs/configure/
-  [6]: /docs/analyse/
-  [7]: /docs/publish/customise/
-  [8]: /docs/publish/customise/ 
-  [9]: /docs/tyk-rest-api/
-  [10]: /docs/tyk-dashboard-api/
-  [11]: /docs/dashboard-admin-api/
-  [12]: /docs/get-started/with-tyk-community-edition/

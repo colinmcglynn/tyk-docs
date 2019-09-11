@@ -1,6 +1,6 @@
 ---
 date: 2017-03-23T17:25:43Z
-title: Token Expiry
+title: Key Expiry
 menu:
   main:
     parent: "Control & Limit Traffic"
