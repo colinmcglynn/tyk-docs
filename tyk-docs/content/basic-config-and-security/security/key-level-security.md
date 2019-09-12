@@ -7,7 +7,7 @@ menu:
 weight: 8 
 ---
 
-Tyk supports the concept of access control at the key level. Access control is managed via three key settings in a session object. In order to be fully clear on how Tyk handles access control, it's worth looking at the key settings that go into a user session object. A full description of each of the options can be found in the [Tyk Gateway API documentation](/docs/tyk-gateway-api/).
+Tyk supports the concept of access control at the key level. Access control is managed via three key settings in a session object. In order to be fully clear on how Tyk handles access control, it's worth looking at the key settings that go into a user session object.
 
 Tyk will store each access key as a record in Redis, this key will have certain metadata attached to. The record takes this form:
 

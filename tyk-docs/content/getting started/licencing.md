@@ -9,14 +9,54 @@ url: "/getting-started/licencing"
 ---
 
 
-Tyk comes in three powerful flavours: Cloud, Multi-Cloud and On-Premises. Each has its own strengths and reasons for deployment.
+## Cloud (SaaS)
 
-- [Tyk Cloud][1]: The fastest way to explore Tyk – no setup, no installations, just a straight-up cloud-based API gateway and proxy.
-- [Tyk Multi-Cloud][2]: Get the best of both worlds, manage things from our cloud but get one or more Tyk Gateway's in your infrastructure.
-- [Tyk On-Premises][3]: A full Tyk stack in your own infrastructure, it doesn't call home, it's all yours and you can do with it what you like. This is the most flexible Tyk deployment you could have.
-- [Tyk Community Edition][4]: Tyk Community Edition is the open-source API Gateway that is developed by our community and supported by our community members and advocates (with some help from the Tyk Technologies team).
+### Free Licence
 
- [1]: /docs/get-started/with-tyk-cloud
- [2]: /docs/get-started/with-tyk-hybrid
- [3]: /docs/get-started/with-tyk-on-premise
- [4]: /docs/get-started/with-tyk-community-edition
+The Tyk Cloud Proof of Concept (PoC) plan (1,000 API calls/day). No credit card required. This allows you to manage a single Tyk node.
+
+### Pro and Pro + Licences
+
+A Pro Cloud licence gives you 50,000 calls a day. A Pro + licence gives you 1,000,000 calls a day.
+
+We also have SaaS Enterprise solutions. [Contact us](https://tyk.io/about/contact/#contact-us) for details.
+
+See our [Cloud pricing](https://tyk.io/pricing/cloud/) page for more details
+
+
+## Multi-Cloud (SaaS)
+
+### Free 30 Days Licence
+
+The Tyk Multi-Cloud Proof of Concept (PoC) plan (1,000 API calls/day). No credit card required. After 30-days you can cancel your account without charge. This allows you to manage a single Tyk node.
+
+### Pro and Pro + Licences
+
+A Pro Cloud licence gives you 50,000 calls a day. A Pro + licence gives you 1,000,000 calls a day.
+
+We also have **SaaS Enterprise** solutions. [Contact us](https://tyk.io/about/contact/#contact-us) for details.
+
+See our [Multi-Cloud pricing](https://tyk.io/api-gateway/cloud/#multi-cloud) page for more details
+
+
+## On-Premises Licencing
+
+### Free 3  Months Developer Licence
+
+This licence is suitable for managing 1 Tyk node for evaluation purposes only. And you can renew the license as many times as you want, its always free, however, this licence doesn’t include support or patch notifications.
+
+
+### Pro Licence
+
+This commercial licence is valid for managing 2 Tyk nodes. Includes helpdesk support. We also offer Pricing models for more than 2 nodes if required.
+
+
+## Enterprise Licencing
+
+Our Enterprise offerings are licenced on a case by case basis. See [Tyk Enterprise](https://tyk.io/api-gateway/enterprise/) for how to contact us about how our Enterprise product works.
+
+## MDCB Licencing
+
+If you require our [Multi Data Centre Bridge](/docs/tyk-multi-data-centre/) functionality, [contact us](https://tyk.io/about/contact/#contact-us) for details.
+
+

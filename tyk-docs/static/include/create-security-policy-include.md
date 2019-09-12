@@ -1,9 +1,3 @@
-## <a name="introduction"></a> Introduction
-
-A security policy encapsulates several options that can be applied to a key. It acts as a template that can override individual sections of an API key (or identity) in Tyk.
-
-See [What is a Security Policy?][8]
-
 
 ## <a name="with-dashboard"></a>Tutorial: Create a security policy with the Dashboard
 

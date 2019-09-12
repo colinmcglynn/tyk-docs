@@ -28,7 +28,7 @@ The following services can be configured in your `pump.conf` file:
 * Prometheus
 * Logz.io
 
-See [Tyk Pump Configuration](/docs/configure/tyk-pump-configuration/) for more details.
+See [Tyk Pump Configuration](/docs/tyk-configuration-reference/tyk-pump-configuration/) for more details.
 
 Tyk Pump can be horizontally scaled without causing duplicate data.
 

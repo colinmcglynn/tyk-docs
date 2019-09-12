@@ -9,14 +9,22 @@ url: "/getting-started/installation"
 ---
 
 
-Tyk comes in three powerful flavours: Cloud, Multi-Cloud and On-Premises. Each has its own strengths and reasons for deployment.
+This section covers how to install Tyk for PoC purposes:
 
-- [Tyk Cloud][1]: The fastest way to explore Tyk – no setup, no installations, just a straight-up cloud-based API gateway and proxy.
-- [Tyk Multi-Cloud][2]: Get the best of both worlds, manage things from our cloud but get one or more Tyk Gateway's in your infrastructure.
-- [Tyk On-Premises][3]: A full Tyk stack in your own infrastructure, it doesn't call home, it's all yours and you can do with it what you like. This is the most flexible Tyk deployment you could have.
-- [Tyk Community Edition][4]: Tyk Community Edition is the open-source API Gateway that is developed by our community and supported by our community members and advocates (with some help from the Tyk Technologies team).
+### [Tyk Cloud](/getting-started/installation/with-tyk-cloud/)
 
- [1]: /docs/get-started/with-tyk-cloud
- [2]: /docs/get-started/with-tyk-hybrid
- [3]: /docs/get-started/with-tyk-on-premise
- [4]: /docs/get-started/with-tyk-community-edition
+Our no install SaaS product. The quickest way to start using Tyk.
+
+### [Tyk Multi-Cloud](/docs/getting-started/installation/with-tyk-multi-cloud/)
+
+We manage the Dashboard, you deploy the Gateways within your environment.
+
+### [Tyk On-Premises](/docs/getting-started/installation/with-tyk-on-premises/)
+
+You have total control over installing Tyk. You can install on Ubuntu or RedHat/CentOS or use container based installations via Docker, Heroku, Microsoft Azure and Vagrant.
+
+### [Tyk Community Edition](/docs/getting-started/installation/with-tyk-community-edition/)
+
+Our open-source, Gateway only edition. It can be installed on Ubuntu and RedHat/CentOS, or via Docker.
+
+

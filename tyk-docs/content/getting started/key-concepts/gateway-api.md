@@ -15,7 +15,6 @@ The Tyk Gateway REST API is the primary means for integrating your application w
 The Tyk Gateway API is capable of:
 
 *   Managing session objects (token generation)
-*   Managing and listing policies
 *   Managing and listing API Definitions (*only* when not using the Dashboard)
 *   Hot reloads / reloading a cluster configuration
 *   OAuth client creation (*only* when not using the Dashboard)

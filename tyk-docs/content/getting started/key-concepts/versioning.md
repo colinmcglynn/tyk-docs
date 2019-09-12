@@ -210,14 +210,13 @@ By default, Tyk require version information in a header key, a query parameter o
 
 In many cases a versioned API will have different upstream back-end servers. In order to make it possible to target those servers when a new version flag is detected, you can use the `override_target` option in the version definition to set it to the host you would like to target for the specified version.
 
-See  [API Definition Object Details][3] for details of the the available keys in the API Definition.
+See  [API Definition Object Details](/docs/tyk-gateway-api/api-definition-objects/) for details of the the available keys in the API Definition.
 
  
 
 
  [1]: /docs/img/dashboard/system-management/no_versioning_2.5.png
  [2]: /docs/img/dashboard/system-management/version_options_2.5.png
- [3]: /docs/tyk-rest-api/api-definition-object-details/
 
 
 

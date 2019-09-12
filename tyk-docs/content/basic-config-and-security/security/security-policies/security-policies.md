@@ -8,6 +8,5 @@ weight: 6
 url: "/security/security-policies"
 ---
 
-[What is a Security Policy ?][1]
+See [What is a Security Policy ?](/docs/getting-started/key-concepts/what-is-a-security-policy/) for an overview of what a security policy is. This section shows you how to incorporate a security policy for your installation.
 
-[1]: /docs/concepts/what-is-a-security-policy/
