@@ -53,7 +53,7 @@ Tyk uses many shared secrets between services, and some of these have defaults i
 *   `admin_secret`
 *   `node_secret`
 
-#### Use the public/private key message security!
+#### Use the public/private key message security
 
 Tyk makes use of public-key message verification when it comes to messages that are sent from the Dashboard to the Gateways, these messages can include:
 

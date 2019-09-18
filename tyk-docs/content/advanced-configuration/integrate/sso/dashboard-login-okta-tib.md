@@ -8,11 +8,11 @@ weight: 0
 ---
 
 
-This is an end-to-end worked example of how you can use [Okta](https://www.okta.com/) and our [Tyk Identity Broker (TIB)](https://tyk.io/docs/concepts/tyk-components/identity-broker/
+This is an end-to-end worked example of how you can use [Okta](https://www.okta.com/) and our [Tyk Identity Broker (TIB)](/docs/getting-started/tyk-components/identity-broker/
 ) to log in to your Dashboard.
 This guide assumes the following:
 
-* You already have authorised access to Tyk's Dashboard. If you haven't, [get the authorisation key by following this doc](https://tyk.io/docs/security/dashboard/create-users/#a-name-with-api-a-create-a-dashboard-user-with-the-api).
+* You already have authorised access to Tyk's Dashboard. If you haven't, [get the authorisation key by following this doc](/docs/basic-config-and-security/security/dashboard/create-users/#a-name-with-api-a-create-a-dashboard-user-with-the-api).
 * For simplicity, you are running TIB locally on port 3010
 * You are able to edit TIB's configuration file.
 
@@ -74,7 +74,7 @@ This guide assumes the following:
 
 
 7. Start TIB by running the binary (`profiles.json` is in the same CWD)
-   Follow this [link](https://tyk.io/docs/integrate/3rd-party-identity-providers/#tib) for detailed instruction to install TIB
+   Follow this [link](/docs/integrate/3rd-party-identity-providers/#installation) for detailed instruction to install TIB
 8. Test that it works:
    From the broswer call `http://localhost:3010/auth/{PROFILE-NAME-IN-TIB}/openid-connect`
     - If it's working you'll be redirected to Okta's web page and will be asked to enter your Okta user name and password.
@@ -87,7 +87,7 @@ curl http://{TIB-DOMAIN}:{TIB-PORT}/api/profiles/{PROFILE-NAME-IN-TIB} -H "Autho
 
   - POST and DELETE calls apply as normal
   - You can post a few profiles to TIB.
-  - See the full docs for [TIB REST APIs](https://tyk.io/docs/integrate/3rd-party-identity-providers/tib-rest-api/)
+  - See the [TIB REST API documentation](/docs/advanced-configuration/integrate/3rd-party-identity-providers/tib-rest-api/) for more details.
 
 ## <a name="flow"></a>The magic - The flow behind the scenes:
  1. The initial call to the endpoint on TIB was redirected to Okta
@@ -105,8 +105,8 @@ Once it's working you can also add two more enhancements - SSO and MFA
 ### <a name="sso"></a>SSO login into the dashboard via a login page
    You will need to:
 	- set up a web server with a login page and a form for `user` and `password`
-	- Update `tyk_analytics.conf` to redirect logins to that url
-    Explicit details are in [steps 6-7](https://tyk.io/docs/integrate/3rd-party-identity-providers/dashboard-login-ldap-tib/#6-create-a-login-page)
+	- Update `tyk_analytics.conf` to redirect logins to that URL
+    Explicit details are in [steps 6-7](/docs/advanced-configuration/integrate/sso/dashboard-login-ldap-tib/#6-create-a-login-page)
 
 ### <a name="mfa-support"></a> Multi-Factor-Authentication (MFA) Support
    MFA works out-of-the-box in Tyk since luckily Okta supports it. you would need to add it to the configuration of the account holder. Under `Security --> Multifactor --> Factor types` you can choose the types you want. For instance I chose Google Authenticator.

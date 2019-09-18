@@ -14,7 +14,7 @@ The Tyk Gateway server is configured primarily via the `tyk.conf` file, this fil
 
 ### Environment Variables
 
-Environment variables can be used to override the settings defined in the configuration file. See [Environment Variables](/docs/configure/environment-variables/) for details. Where an environment variable is specified, its value will take precedence over the value in the configuration file.
+Environment variables can be used to override the settings defined in the configuration file. See [Environment Variables](docs/tyk-configuration-reference/environment-variables/) for details. Where an environment variable is specified, its value will take precedence over the value in the configuration file.
 
 ### <a name="linter"></a> tyk lint
 In **v2.4** we have added a new `tyk lint ` command which will validate your `tyk.conf` file and validate it for syntax correctness, misspelled attribute names or format of values. The Syntax can be:
@@ -44,7 +44,7 @@ This is the path to the Tyk templates, as of the current version there is only o
 
 ### <a name="app_path"></a> app_path
 
-If Tyk is being used in its standard configuration (CE Mode), then API definitions are stored in the apps folder (by default in `/opt/tyk-gateway/apps`). This file is scanned for files that ending in `.json` extension and interpreted at startup or reload. See [API Management](/docs/tyk-rest-api/api-management/) for more details.
+If Tyk is being used in its standard configuration (CE Mode), then API definitions are stored in the apps folder (by default in `/opt/tyk-gateway/apps`). This file is scanned for files that ending in `.json` extension and interpreted at startup or reload. See the APIs section of the [Tyk Gateway API Swagger/OpenAPI documentation](/docs/tyk-gateway-api/) for more details.
 
 ### <a name="hash_keys"></a> hash_keys
 
@@ -125,7 +125,7 @@ Enable SSL/TLS connection between Tyk Gateway &amp; Redis.
 
 Tyk is capable of recording every hit to your API into a database with various filtering parameters, set this value to `true` and fill in the sub-section below to enable logging.
 
-> **Note**: For performance reasons, Tyk will store traffic data to Redis initially and then purge the data from Redis to  MongoDB or other, [data stores](https://tyk.io/docs/analyse/other-data-stores/), on a regular basis as determined by the `purge_delay` setting in your Tyk Pump configuration.
+> **Note**: For performance reasons, Tyk will store traffic data to Redis initially and then purge the data from Redis to  MongoDB or other, [data stores](/docs/analytics-and-reporting/other-data-stores/), on a regular basis as determined by the `purge_delay` setting in your Tyk Pump configuration.
 
 ### <a name="analytics_config"></a> analytics_config
 
@@ -143,7 +143,7 @@ Setting `enforce_org_data_detail_logging` in the `tyk.conf` will enforce it (quo
 
 As of Tyk API Gateway 2.0, Tyk can store GeoIP information based on MaxMind DB's, to enable GeoIP tracking on inbound request analytics, set this value to `true` and assign a DB using the `geo_ip_db_path` setting.
 
-Please make sure you have also enabled analytics storing by setting [`enable_analytics`](https://tyk.io/docs/configure/tyk-gateway-configuration-options/#a-name-enable-analytics-a-enable-analytics) in the Gateway.
+Please make sure you have also enabled analytics storing by setting [`enable_analytics`](/docs/tyk-configuration-reference/tyk-gateway-configuration-options/#a-name-enable-analytics-a-enable-analytics) in the Gateway.
 
 ##### <a name="enable_geo_ip_db_path"></a> geo_ip_db_path
 
@@ -269,7 +269,7 @@ A list of certificates and domains to match against. Please see the SSL section 
 
 #### <a name="http_server_options-ssl_certificates"></a> http_server_options.ssl_certificates
 
-Added in 2.4, as altertnative to `http_server_options.certificates`, which supports our [Certificate API](/docs/security/tls-and-ssl/mutual-tls/#certificates-management) format. It should be a list of certificate IDs returned by Certificate API, or paths to certificate in PEM format (including private key). 
+Added in 2.4, as altertnative to `http_server_options.certificates`, which supports our [Certificate API](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/#a-name-certificates-management-a-certificate-management) format. It should be a list of certificate IDs returned by Certificate API, or paths to certificate in PEM format (including private key). 
 
 #### <a name="http_server_options-skip_url_cleaning"></a> http_server_options.skip_url_cleaning
 
@@ -453,7 +453,7 @@ The hostname to bind the REST API to.
 ### <a name="control-api"></a>control_api_port
 
 This allows you to run the Gateway Control API on separate port, and protect it behind a firewall if needed.
-Please make sure you follow these [instructions](https://tyk.io/docs/deploy-tyk-premise-production/#change-your-control-port) when setting the control port.
+Please make sure you follow these [instructions](/docs/planning-for-production/#change-your-control-port) when setting the control port.
 
 > **Note:** This option is available from v2.4 onwards.
 

@@ -128,7 +128,7 @@ To make it work you need to specify 3 additional attributes in profile configura
 * `LDAPFilter` - filter applied to the search, should include the `*USERNAME*`variable. For example: `((objectCategory=person)(objectClass=user)(cn=*USERNAME*))`
 * `LDAPSearchScope` - This specifies the portion of the target subtree that should be considered. Supported search scope values include: 0 - baseObject (often referred to as "base"), 1 - singleLevel (often referred to as "one"), 2 - wholeSubtree (often referred to as "sub")
 
-For additional information about [LDAP search protocol](https://www.ldap.com/the-ldap-search-operation)
+See [LDAP search protocol](https://www.ldap.com/the-ldap-search-operation) for more details.
 
 Example profile using LDAP search filters:
 ```{.copyWrapper}

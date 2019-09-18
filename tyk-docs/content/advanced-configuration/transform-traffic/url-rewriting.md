@@ -74,7 +74,7 @@ Use the *save* or *create* buttons to save the changes and make the URL rewrite 
 
 As of version 2.2 Tyk allows context variables to be injected into the regex using the `$tyk_context.` namespace instead of the numeric index.
 
-For more details see [Context Variables][3]
+For more details see [Context Variables](/docs/getting-started/key-concepts/context-variables/)
 
 ### Meta Data
 
@@ -176,7 +176,6 @@ When triggers are added, you can edit or remove them inside the **Advanced URL r
 
 [1]: /docs/img/dashboard/system-management/endpoint_design_url_rewrite_1.8.png
 [2]: /docs/img/dashboard/system-management/configure_rewrite_2.5.png
-[3]: /docs/concepts/context-variables/
 [4]: /docs/img/dashboard/system-management/rewriteEndpointDesigner_add_trigger.png
 [5]: /docs/img/dashboard/system-management/rewriteEndpointDesigner_trigger_list.png
 

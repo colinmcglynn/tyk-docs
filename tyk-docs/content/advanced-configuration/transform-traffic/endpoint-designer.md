@@ -53,7 +53,7 @@ Accessing a path which has been blacklisted:
 
 ### Body Transform
 
-The Body Transform plugin  allows Body Transforms for both the Request and the Response. See [Request Body](/docs/transform-traffic/request-body/) and [Response Body](/docs/transform-traffic/response-body/) for more details.
+The Body Transform plugin  allows Body Transforms for both the Request and the Response. See [Request Body](/docs/advanced-configuration/transform-traffic/request-body/) and [Response Body](/docs/advanced-configuration/transform-traffic/response-body/) for more details.
 
 ### Cache
 
@@ -63,7 +63,7 @@ If you specify a a path to be in the cache list, then the path will be cached by
 
 Our circuit breaker is threshold-based, so if x% of requests are failing then the circuit is tripped. When the circuit is tripped, the gateway stops all inbound requests to that service for a pre-defined period of time (a recovery time-period).
 
-The circuit breaker will also emit an event which you can hook into to perform some corrective or logging action. See [Circuit Breaker](/docs/ensure-high-availability/circuit-breakers/) for more details.
+The circuit breaker will also emit an event which you can hook into to perform some corrective or logging action. See [Circuit Breaker](/docs/planningfor-production/ensure-high-availability/circuit-breakers/) for more details.
 
 ### Do Not Track Endpoint
 
@@ -71,7 +71,7 @@ This plugin allows you to have all traffic including analytics for an endpoint c
 
 ### Enforced Timeout
 
-This plugin allows you to ensure that your service always responds within a given amount of time. See [Enforced Timeouts](/docs/ensure-high-availability/enforced-timeouts/) for more details.
+This plugin allows you to ensure that your service always responds within a given amount of time. See [Enforced Timeouts](/docs/planningfor-production/ensure-high-availability/enforced-timeouts/) for more details.
 
 ### Ignore
 
@@ -81,7 +81,7 @@ Adding a path to an ignored list means that the path will not be processed for a
 
 ### Method Transforms
 
-This plugin allows you to change the method of a request. See [Method Transforms](/docs/transform-traffic/request-method-transform/) for more details.
+This plugin allows you to change the method of a request. See [Method Transforms](docs/advanced-configuration/transform-traffic/request-method-transform/) for more details.
 
 ### Mock Response
 
@@ -99,11 +99,11 @@ The options are for a mock:
 
 ### Modify Headers
 
-This plugin allows you to modify header information before it leaves the proxy and is passed to your upstream API or when a response is proxied back to the client. See [Request Headers](/docs/transform-traffic/request-headers/) for more details.
+This plugin allows you to modify header information before it leaves the proxy and is passed to your upstream API or when a response is proxied back to the client. See [Request Headers](/docs/advanced-configuration/transform-traffic/request-headers/) for more details.
 
 ### Request Size Limit
 
-This plugin will ensure that requests are only accepted if they are under a certain size. To use this plugin, select a path that matches your required URL, then set the size, in bytes, that is the maximum allowed. See [Request Size Limits](/docs/control-limit-traffic/request-size-limits/) for more details.
+This plugin will ensure that requests are only accepted if they are under a certain size. To use this plugin, select a path that matches your required URL, then set the size, in bytes, that is the maximum allowed. See [Request Size Limits](/docs/basic-config-and-security/control-limit-traffic/request-size-limits/) for more details.
 
 ### Track Endpoint
 
@@ -111,11 +111,11 @@ This plugin allows you to manually select each endpoint for tracking.
 
 ### URL Rewrite
 
-This plugin allows you to translate an outbound API interface to your internal structure of your services. See [URL Rewriting](/docs/transform-traffic/url-rewriting/) for more details.
+This plugin allows you to translate an outbound API interface to your internal structure of your services. See [URL Rewriting](/docs/advanced-configuration/transform-traffic/url-rewriting/) for more details.
 
 ### Virtual Endpoint
 
-This plugin allows you to create small code snippets that run on your set path. These snippets can be written in JavaScript and offer an easy way to create dynamic, flexible endpoints that perform complex interactions with your underlying services. See [Virtual Endpoints](/docs/compose-apis/virtual-endpoints/) for more details.
+This plugin allows you to create small code snippets that run on your set path. These snippets can be written in JavaScript and offer an easy way to create dynamic, flexible endpoints that perform complex interactions with your underlying services. See [Virtual Endpoints](/docs/advanced-configuration/compose-apis/virtual-endpoints/) for more details.
 
 ### Validate JSON
 

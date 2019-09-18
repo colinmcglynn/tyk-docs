@@ -82,6 +82,6 @@ If you set a date in the key expiry field, when the key is created (or updated),
 
 Tyk manages timestamps in the Unix timestamp format - this means that when a date is set for expiry it should be converted to a Unix timestamp (usually a large integer) which shows seconds since the epoch (Jan 1 1970). This format is used because it allows for faster processing and takes into account timezone differences without needing localisation.
 
-Key sessions are created and updated using the Tyk REST API, in order to set the expiry date for a key, update the `expires` value with the timestamp of when the key should expire.
+Key sessions are created and updated using the Tyk Gateway API, in order to set the expiry date for a key, update the `expires` value with the timestamp of when the key should expire.
 
 Leave this field empty for it never to expire.

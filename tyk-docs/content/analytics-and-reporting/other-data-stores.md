@@ -9,7 +9,7 @@ weight: 10
 
 The Tyk component that enables all of the analytics in Tyk and moves the data from the Gateway level into your Dashboard is called Tyk Pump.
 
-Tyk Pump does just that, it is a pump, and it is possible to set it up to send the analytics data it finds to other data stores, such as ElasticSearch and StatsD.
+Tyk Pump does just that, it is a pump, and it is possible to set it up to send the analytics data it finds to other data stores, such as [ElasticSearch](https://www.elastic.co/) and [StatsD](https://www.datadoghq.com/).
 
 ## <a name="pump-configuration"></a> Pump Configuration
 
@@ -71,11 +71,11 @@ Settings must be the same as for the original `tyk.conf` for Redis and for Mongo
 
 ### Environment Variables
 
-[Environment variables](https://tyk.io/docs/configure/pump-env-variables/) can be used to override settings defined in `pump.conf`. Where an environment variable is specified, its value will take precedence over the value in the configuration file.
+[Environment variables](/docs/tyk-configuration-reference/environment-variables/) can be used to override settings defined in `pump.conf`. Where an environment variable is specified, its value will take precedence over the value in the configuration file.
 
 ## <a name="elasticsearch"></a> ElasticSearch
 
-The Elasticsearch pump configuration looks like this:
+The ElasticSearch pump configuration looks like this:
 
 ```{.copyWrapper}
 "elasticsearch": {

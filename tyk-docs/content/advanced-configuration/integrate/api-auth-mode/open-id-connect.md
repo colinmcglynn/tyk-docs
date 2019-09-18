@@ -1,13 +1,13 @@
 ---
 date: 2017-03-24T16:52:36Z
-title: Integrate with OIDC
+title: Integrate with OpenID Connect
 menu:
   main:
     parent: "API Authentication Mode"
 weight: 0
 ---
 
-Tyk comes with support for OpenID Connect (OIDC) Identity Tokens provided by any standards compliant OIDC provider.
+Tyk comes with support for [OpenID Connect (OIDC)](https://openid.net/connect/) Identity Tokens provided by any standards compliant OIDC provider.
 
 ### The OIDC Flow:
 

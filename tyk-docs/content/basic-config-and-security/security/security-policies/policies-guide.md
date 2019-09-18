@@ -108,7 +108,7 @@ The record is a single JSON object, with each named key representing the policy 
 
 ### Applying a policy to a key
 
-To apply the above policy to a key, we simply need to call the `/create` (or `/add`) endpoint in the Tyk REST API with a session object that has the `apply_policy_id` flag set to the name `default` (or whatever you named your policy).
+To apply the above policy to a key, we simply need to call the `/create` (or `/add`) endpoint in the Tyk Gateway API with a session object that has the `apply_policy_id` flag set to the name `default` (or whatever you named your policy).
 > **NOTE**: Although `apply_policy_id` is still supported, it is now deprecated. `apply_policies` is now used to list your policy IDs as an array. This supports the **Multiple Policy** feature introduced in the  **v2.4** release.
 
 ```{.copyWrapper}

@@ -9,7 +9,7 @@ url: "/integrate/3rd-party-identity-providers"
 ---
 
 ## <a name="dashboard-sso"></a>Dashboard SSO API
-The Dashboard exposes a special API to implement custom authentications for the Dashboard and Portal. See the [Docs](/docs/dashboard-admin-api/sso).
+The Dashboard exposes a special API to implement custom authentications for the Dashboard and Portal. See [Dashboard Admin API SSO](/docs/dashboard-admin-api/sso/) for more details.
 
 You can use the `sso_permission_defaults` dashboard configuration option to configure the permissions of users created via SSO API. See the SSO API docs above.
 
