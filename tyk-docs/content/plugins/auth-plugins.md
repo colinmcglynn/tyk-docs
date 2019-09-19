@@ -1,6 +1,6 @@
 ---
 date: 2017-03-24T15:45:13Z
-title: Auth Plugins
+title: Authentication Plugins
 menu:
   main:
     parent: "Plugins"

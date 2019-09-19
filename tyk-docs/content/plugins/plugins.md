@@ -8,9 +8,9 @@ url: "/plugins"
 
 Tyk supports the use of the following plugins to extend Tyk functionality:
 
-*   [Rich Plugins][1]
-*   [JavaScript Vitual Machine Middleware][2] (JSVM Middleware)
-*   [Authentication Plugins][3]
+*   [Rich Plugins](/docs/customise-tyk/plugins/rich-plugins/)
+*   [JavaScript Vitual Machine Middleware](/docs/customise-tyk/plugins/javascript-middleware/) (JSVM Middleware)
+*   [Authentication Plugins](/docs/plugins/auth-plugins/)
 
 > **Note**: Plugins are only available for Multi-Cloud and On-Premises installations.
 
@@ -36,7 +36,7 @@ All plugins require the following addition to be made to your `tyk.conf` file:
 `public_key_path` sets a public key, this is used for verifying signed bundles. You may omit this if unsigned bundles are used.
 
 
-For a [gRPC][4] rich plugin a further `coprocess_grpc_server` parameter is required within `coprocess_options`:
+For a [gRPC](/docs/customise-tyk/plugins/rich-plugins/grpc/) rich plugin a further `coprocess_grpc_server` parameter is required within `coprocess_options`:
 
 ```{.copyWrapper}
 "coprocess_grpc_server": "tcp://127.0.0.1:5555"
@@ -64,7 +64,3 @@ There are some caveats to plugins:
 *   The APIs used *must* be specified in an API definition and are not global across APIs.
 *   They must manage API-specific cases in the same process, only one CoProcess will be managed by a Tyk Instance.
 
- [1]: /docs/customise-tyk/plugins/rich-plugins/
- [2]: /docs/customise-tyk/plugins/javascript-middleware/
- [3]: /docs/customise-tyk/plugins/auth-plugins/
- [4]: /docs/customise-tyk/plugins/rich-plugins/grpc/
