@@ -11,7 +11,7 @@ weight: 1
 
 Embedded JavaScript interpreters offer the bare bones of a scripting language, but not necessarily the functions that you would expect, especially with JavaScript, where objects such as `XMLHttpRequest()` are a given. However, those interfaces are actually provided by the browser / DOM that the script engine are executing in. In a similar vein, we have included a series of functions to the JSVM for convenience and give the interpreter more capability.
 
-This list is regularly revised and any new suggestions should be made in our [Github issue tracker][1].
+This list is regularly revised and any new suggestions should be made in our [Github issue tracker](https://github.com/TykTechnologies/tyk/issues).
 
 Below is the list of functions currently provided by Tyk.
 
@@ -19,7 +19,7 @@ Below is the list of functions currently provided by Tyk.
 *   `rawlog(string)`: Calling `rawlog("this message")` will cause Tyk to log the string to Tyk's default logger output without any additional formatting, like adding prefix or date. This function can be used if you want to have own log format, and parse it later with custom tooling.
 *   `b64enc` - Encode string to base64
 *   `b64dec` - Decode base64 string
-*   `TykBatchRequest` this function is similar to `TykMakeHttpRequest` but makes use of the Tyk Batch API. See [Batch Requests](/docs/tyk-rest-api/batch-requests/) for more details.
+*   `TykBatchRequest` this function is similar to `TykMakeHttpRequest` but makes use of the Tyk Batch API. See the Batch Requests section of the [Tyk Gateway API Swagger/OpenAPI page](/docs/tyk-gateway-api/) for more details.
 *   `TykMakeHttpRequest(JSON.stringify(requestObject))`: This method is used to make an HTTP request, requests are encoded as JSON for deserialisation in the min binary and translation to a system HTTP call. The request object has the following structure:
 
 ```{.javascript}

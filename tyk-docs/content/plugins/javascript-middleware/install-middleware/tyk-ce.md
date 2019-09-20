@@ -8,6 +8,7 @@ weight: 0
 ---
 
 In order to activate middleware in a Tyk Community Edition edition or when using a file-based setup, the middleware needs to be registered as part of your API Definition. Registration of middleware components is relatively simple.
+
 > **Note**: it is important that your object names are unique.
 
 ### Enable the JSVM

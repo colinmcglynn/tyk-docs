@@ -11,9 +11,9 @@ From Tyk Dashboard v1.8, you can now create and manage OAuth clients from the De
 
 ## Prerequisites
 
-1. An API created in your Dashboard using Tyk's ability to act as a OAuth provider. You need to have [OAuth 2.0](https://tyk.io/docs/security/your-apis/oauth-2-0/#option-2-use-the-tyk-oauth-flow) selected as the Authentication mode. See [Create an API](/docs/get-started/with-tyk-cloud/tutorials/create-api/#a-namewithdashboardatutorial-create-an-api-with-the-dashboard) for more details. 
-2. A Policy created in your Dashboard with the API created above selected in the **Access Rights > Add access rule** drop-down. See [Create a Security Policy](/docs/get-started/with-tyk-cloud/tutorials/create-security-policy/) for more details.
-3. A Portal Catalogue entry for the API created above with the Policy you created selected from the **Available policies** drop-down. See [Create a Portal Entry](https://tyk.io/docs/get-started/with-tyk-cloud/tutorials/create-portal-entry/) for more details.
+1. An API created in your Dashboard using Tyk's ability to act as a OAuth provider. You need to have [OAuth 2.0](/docs/basic-config-and-security/security/your-apis/oauth-2-0/#option-2-use-the-tyk-oauth-flow) selected as the Authentication mode. See the [Create an API](/docs/try-out-tyk/tutorials/create-api/) tutorial for more details. 
+2. A Policy created in your Dashboard with the API created above selected in the **Access Rights > Add access rule** drop-down. See the [Create a Security Policy](/docs/try-out-tyk/tutorials/create-security-policy/) tutorial for more details.
+3. A Portal Catalogue entry for the API created above with the Policy you created selected from the **Available policies** drop-down. See the [Create a Portal Entry](/docs/try-out-tyk/tutorials/create-portal-entry/) for more details.
 4. A developer account created in your Developer Portal.
 
 ## Create the OAuth Client from the Portal

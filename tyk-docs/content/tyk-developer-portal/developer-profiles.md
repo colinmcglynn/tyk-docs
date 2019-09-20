@@ -95,6 +95,7 @@ Once logged in, a developer can edit their profile. Select **Edit profile** from
 ![Manage Profile][9]
 
 A developer can change the following:
+
 * Email
 * Change Password
 * Name

@@ -17,7 +17,7 @@ We will assume that the following components are up and running in your master D
 * Redis
 * Dashboard
 * Gateway / Gateway Cluster
-* Working Tyk-Pro On Premises installation - https://tyk.io/docs/get-started/with-tyk-on-premise/
+* Working [Tyk-Pro On Premises installation](/docs/getting-started/installation/with-tyk-on-premises/)
 
 ### Default Ports
 
@@ -217,9 +217,9 @@ May 06 11:50:42 master tyk-sink[1798]: time="2018-05-06T11:50:42Z" level=info ms
 
 ## <a name="app config"></a>Application Configuration
 
-Before a slave node can connect to MDCB, it is important to enable the organisation that owns all the APIs to be distributed to be allowed to utilise Tyk MDCB. To do this, the organisation record needs to be modified with a few new flags using the [Tyk Dashboard Admin API](https://tyk.io/docs/dashboard-admin-api/).
+Before a slave node can connect to MDCB, it is important to enable the organisation that owns all the APIs to be distributed to be allowed to utilise Tyk MDCB. To do this, the organisation record needs to be modified with a few new flags using the [Tyk Dashboard Admin API](/docs/dashboard-admin-api/).
 
-To make things easier, we will first set a few [environment variables](https://tyk.io/docs/configure/dashboard-env-variables/):
+To make things easier, we will first set a few [environment variables](/docs/tyk-configuration-reference/environment-variables/):
 
 `export DASH_API_KEY=<YOUR_KEY>`
 
