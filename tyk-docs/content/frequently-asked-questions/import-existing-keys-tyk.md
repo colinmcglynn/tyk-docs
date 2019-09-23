@@ -67,6 +67,6 @@ curl http://127.0.0.1:8080/quickstart/headers -H 'Authorization: abc'
 }
 ```
 
-See also the Keys section of the [Gateway API Swagger doc](https://tyk.io/docs/tyk-rest-api/).
+See also the Keys section of the [Gateway API Swagger/Open API doc](/docs/tyk-gateway-api/).
 
 

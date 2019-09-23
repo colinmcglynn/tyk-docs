@@ -5,7 +5,7 @@ menu:
   main:
      parent: "Integration Options"
 weight: 0
-url: "/integrate/sso"
+url: "/advanced-configuration/integrate/sso"
 ---
 
 

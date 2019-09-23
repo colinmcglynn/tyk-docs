@@ -12,8 +12,7 @@ weight: 3
 
 ### Organisation Level Rate Limiting
 
-Endpoints [Create organisation keys](https://tyk.io/docs/tyk-rest-api/organisation-quotas/#create-organisation-keys) and 
-[Add/update organisation keys](https://tyk.io/docs/tyk-rest-api/organisation-quotas/#add-update-organisation-keys) now 
+The Create Organisation Keys and Add/Update Organisation Keys Endpoints now 
 allow you to set rate limits at an organisation level. You will need to add the following fields in your create/add/update key request:
 
 * `"allowance"`
@@ -321,7 +320,7 @@ These endpoints allow you to get a list of all current tokens issued for provide
 
 We have renamed the response `_id` field when retrieving a list of key requests to `id`.
 
-See [List Key Requests](https://tyk.io/docs/tyk-dashboard-api/manage-key-requests/#list-key-requests) for more details.
+See [List Key Requests](/docs/tyk-dashboard-api/manage-key-requests/#list-key-requests) for more details.
 
 
 ### Developers can request a password reset email

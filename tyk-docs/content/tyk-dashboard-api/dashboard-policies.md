@@ -73,7 +73,8 @@ authorization: 7a7b140f-2480-4d5a-4e78-24049e3ba7f8
 }
 ```
 
-Notice that `apiid` field, it is different than rest of policy definitions! (See [GitHub issue 192][1])
+> **NOTE**: The `apiid` field is different than rest of the policy definitions. See [GitHub issue 192](https://github.com/TykTechnologies/tyk/issues/192) for more details.
+
 
 ### Search list of policies
 

@@ -7,7 +7,7 @@ menu:
 weight: 0 
 ---
 
-Use the REST API to clear the cache
+Use the Gateway API to clear the cache
 
 ```
 DELETE /tyk/cache/{api-id}

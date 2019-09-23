@@ -16,7 +16,7 @@ Here are the packages and their versions we are releasing today: Tyk Gateway v2.
 
 ## <a name="mutualtls"></a>Mutual TLS
 
-A major feature of this release is the implementation of Mutual TLS. Now you can protect your APIs by white-listing certificates, idenitfy users based on them, and increase security between Tyk and upstream API. For details, see [Mutual TLS](/docs/security/tls-and-ssl/mutual-tls/).
+A major feature of this release is the implementation of Mutual TLS. Now you can protect your APIs by white-listing certificates, idenitfy users based on them, and increase security between Tyk and upstream API. For details, see [Mutual TLS](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/).
 
 
 ## <a name="multi-policies"></a>Extended use of Multiple Policies
@@ -36,7 +36,7 @@ We have updated the Dashboard **Apply Policies** section of the **Add Key** sect
 
 For this release multiple policies are only supported only via the Add Key section and via the API. Support for OIDC, oAuth, and Portal API Catalogues are planned for subsequent releases.
 
-[Docs](/docs/security/security-policies/partitioned-policies/)
+[Docs](/docs/basic-config-and-security/security/security-policies/partitioned-policies/)
 
 ## <a name="global-api"></a>Global API Rate Limits
 
@@ -48,7 +48,7 @@ Extended Dashboard API designer Rate Limiting and Quotas section in Core setting
 
 ![rate-limits][2]
 
-[Docs](/docs/control-limit-traffic/rate-limiting/)
+[Docs](/docs/basic-config-and-security/control-limit-traffic/rate-limiting/)
 
 ## <a name="cust-analytics"></a>Specify custom analytics tags using HTTP headers
 
@@ -62,16 +62,16 @@ We have added a new **Tag headers** section to the Dashboard **API Designer Adva
 
 ![tag_headers][3]
 
-[Docs](/docs/analyse/log-browser/)
+[Docs](/docs/analytics-and-reporting/log-browser/)
 
 ## <a name="sso"></a>Single-Sign-On (SSO) improvements
 
 More SSO functionality is something that a lot of our customers have been asking for. In this release we've significantly improved our support for SSO, and you can now:
 
-* Enable Tyk Identity Broker to apply LDAP filters to user search [Docs](/docs/integrate/3rd-party-identity-providers/openldap/)
+* Enable Tyk Identity Broker to apply LDAP filters to user search [Docs](/docs/integrate/3rd-party-identity-providers/ldap/)
 * Set permissions for your users, logged via SSO, via `sso_permission_defaults` in Dashboard config file. [Docs](/docs/integrate/3rd-party-identity-providers/)
 * Setup a login page redirect, using `sso_custom_login_url` and `sso_custom_portal_login_url` Dashboard config options to enable users login using a custom SSO login page. [Docs](/docs/integrate/3rd-party-identity-providers/)
-* For those who love to build everything in-house, we have added new API for custom dashboard authentication integrations. [Docs](/docs/integrate/3rd-party-identity-providers/custom/)
+* For those who love to build everything in-house, we have added new API for custom dashboard authentication integrations. [Docs](/docs/advanced-configuration/integrate/3rd-party-identity-providers/custom/)
 
 # Moar!
 This release is packed with way more more cool stuff. Here are detailed release notes for each product:
@@ -79,16 +79,16 @@ This release is packed with way more more cool stuff. Here are detailed release 
 ## <a name="gateway"></a>Tyk Gateway v2.4.0
 
 ### Mutual TLS support
-[Docs](/docs/security/tls-and-ssl/mutual-tls/)
+[Docs](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/)
 
 ### Global API rate limits
-[Docs](/docs/control-limit-traffic/rate-limiting/)
+[Docs](/docs/basic-config-and-security/control-limit-traffic/rate-limiting/)
 
 ### Specify custom analytics tags using HTTP headers
-[Docs](/docs/analyse/log-browser/)
+[Docs](/docs/analytics-and-reporting/log-browser/)
 
 ### Attaching Multiple Policies to the Keys
-[Docs](/docs/security/security-policies/partitioned-policies/)
+[Docs](/docs/basic-config-and-security/security/security-policies/partitioned-policies/)
 
 ### Default User Agent set to Tyk/$VERSION
 If no user agent is specified in a request, it is now set as `Tyk/$VERSION`.
@@ -96,12 +96,12 @@ If no user agent is specified in a request, it is now set as `Tyk/$VERSION`.
 ### Include `x-tyk-api-expires` date header for versioned APIs
 If a request is made for an API which has an expiry date, the response will include the `x-tyk-api-expires` header with expiry date. 
 
-[Docs](/docs/concepts/versioning/)
+[Docs](/docs/getting-started/key-concepts/versioning/)
 
 ### Run Admin Control API on a separate port
 Using `control_api_port` option in configuration file, you can run the admin control api on a separate port, and hide it behind firewall if needed.
 
-[Docs](/docs/security/gateway/gateway-api/)
+[Docs](/docs/basic-config-and-security/security/gateway/gateway-api/)
 
 ### Added a Configuration Linter
 
@@ -114,7 +114,7 @@ If `--conf` is not used, the first of the following paths to exist is used:
 `./tyk.conf`
 `/etc/tyk/tyk.conf`
 
-[Docs](/docs/configure/tyk-gateway-configuration-options/)
+[Docs](/docs/tyk-configuration-reference/tyk-gateway-configuration-options/)
 
 ### Set log_level from tyk.conf
 
@@ -122,7 +122,7 @@ We have added a new `log_level` configuration variable to `tyk.conf` to control 
 
 Possible values are: `debug`, `info`, `warn`, `error`
 
-[Docs](/docs/configure/tyk-gateway-configuration-options/)
+[Docs](/docs/tyk-configuration-reference/tyk-gateway-configuration-options/)
 
 ### Added jsonMarshal to body transform templates
 
@@ -130,13 +130,12 @@ We have added the `jsonMarshal` helper to the body transform templates. You can 
 
 Example: `{{ .myField | jsonMarshal }}`
 
-[Docs](/docs/transform-traffic/request-body/)
+[Docs](/docs/advanced-configuration/transform-traffic/request-body/)
 
 ### Added a blocking reload endpoint
 
 Now you can add a `?block=true` argument to the `/tyk/reload` API endpoint, which will block a response, until the reload is performed. This can be useful in scripting environments like CI/CD workflows.
 
-[Docs](/docs/tyk-rest-api/hot-reload/)
 
 ### `tyk_js_path` file now contains only user code
 
@@ -164,16 +163,16 @@ This was very resource consuming and unstable feature. We recommend using load b
 ## <a name="dashboard"></a>Tyk Dashboard v1.4.0
 
 ### Mutual TLS support
-[Docs](/docs/security/tls-and-ssl/mutual-tls/)
+[Docs](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/)
 
 ### Global API rate limits
-[Docs](/docs/control-limit-traffic/rate-limiting/)
+[Docs](/docs/basic-config-and-security/control-limit-traffic/rate-limiting/)
 
 ### Specify custom analytics tags using HTTP headers
-[Docs](/docs/analyse/log-browser/)
+[Docs](/docs/analytics-and-reporting/log-browser/)
 
 ### Attaching Multiple Policies to the Keys
-[Docs](/docs/security/security-policies/partitioned-policies/)
+[Docs](/docs/basic-config-and-security/security/security-policies/partitioned-policies/)
 
 ### Set permissions for users logged via SSO (Tyk Identity Broker)
 Added new option `sso_permission_defaults` in Dashboard config file. 
@@ -265,17 +264,17 @@ This is a  UI only fix, it is still allowable via the API (which is OK).
 
 ### Support added for Mongo SSL connections
 
-See https://tyk.io/docs/configure/tyk-pump-configuration/ for a sample pump.conf file.
+See [Sample pump.conf](/docs/tyk-configuration-reference/tyk-pump-configuration/) for more details.
 
 ## <a name="mdcb"></a> MDCB v1.4.0
-Added support for Mutual TLS, mentioned by Gateway and Dashboard above. See [Docs](/docs/security/tls-and-ssl/mutual-tls/#mdcb)
+Added support for Mutual TLS, mentioned by Gateway and Dashboard above. See [Docs](/docs/basic-config-and-security/security/tls-and-ssl/mutual-tls/#a-name-mdcb-a-mdcb)
   
 Also fixed bug when Mongo connections became growing though the roof if client with wrong credentials tries to connect.
 
 
 ## <a name="tib"></a>TIB v0.2
   
-Tyk Identity Broker now fully support LDAP search with complex filters! [Docs](/docs/integrate/3rd-party-identity-providers/openldap/)
+Tyk Identity Broker now fully support LDAP search with complex filters! [Docs](/docs/integrate/3rd-party-identity-providers/ldap/)
 
 ## <a name="upgrade"></a>Upgrading all new Components
 

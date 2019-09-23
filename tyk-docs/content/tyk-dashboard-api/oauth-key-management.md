@@ -217,4 +217,4 @@ Cache-Control: no-cache
 ]
 ```
 
-You can control how long you want to store expired tokens in this list using `oauth_token_expired_retain_period` which specifies retain period for expired tokens stored in Redis. By default expired token not get removed. See [here](https://tyk.io/docs/configure/tyk-gateway-configuration-options/#a-name-oauth-token-expired-retain-period-a-oauth-token-expired-retain-period) for more details.
+You can control how long you want to store expired keys in this list using `oauth_token_expired_retain_period` which specifies retain period for expired keys stored in Redis. By default, an expired key does not get removed. See [expired key retain period](/docs/tyk-configuration-reference/tyk-gateway-configuration-options/#a-name-oauth-token-expired-retain-period-a-oauth-token-expired-retain-period) for more details.

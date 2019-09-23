@@ -85,6 +85,4 @@ admin-auth: 12345
 
 ### Export APIs and Policies
 
-To export APIs and Policies you should use the standard `GET APIS` endpoint and `GET POLICIES` list endpoints. The output from these endpoints can be used by the [import API][1].
-
- [1]: /docs/dashboard-admin-api/import/
+To export APIs and Policies you should use the standard `GET APIS` endpoint and `GET POLICIES` list endpoints. The output from these endpoints can be used by the [Admin API import](/docs/dashboard-admin-api/import/).

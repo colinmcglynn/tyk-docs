@@ -13,4 +13,4 @@ You can see data in the log browser but the rest of the reports display nothing.
 
 ### Solution
 
-If your Pump is configured to use `mongo_selective_pump` (e.g. store data in a collection per organisation), ensure that the [Dashboard configuration setting](/docs/configure/tyk-dashboard-configuration-options/) `use_sharded_analytics` is set to `true`. The same applies in the reverse direction. If you are using `mongo-aggregate-pump` in your [pump configuration](/docs/configure/tyk-pump-configuration/), set `use_sharded_analytics` to false.
+If your Pump is configured to use `mongo_selective_pump` (e.g. store data in a collection per organisation), ensure that the [Dashboard configuration setting](/docs/tyk-configuration-reference/tyk-dashboard-configuration-options/) `use_sharded_analytics` is set to `true`. The same applies in the reverse direction. If you are using `mongo-aggregate-pump` in your [pump configuration](/docs/tyk-configuration-reference/tyk-pump-configuration/), set `use_sharded_analytics` to false.

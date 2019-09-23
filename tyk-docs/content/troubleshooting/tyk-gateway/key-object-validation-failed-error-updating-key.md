@@ -14,6 +14,5 @@ Users receive this error message when attempting to make API calls to an existin
 When the token was created, most probably it was configured without the meta_data key.
 
 ### Solution
-The user will need to add the key-value pair meta_data: {} to their key as per the [documentation][1].
+The user will need to add the key-value pair `meta_data: {}` to their key. See [Session Object](/docs/getting-started/key-concepts/what-is-a-session-object/) for more details.
 
-[1]: /docs/tyk-rest-api/token-management/

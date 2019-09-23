@@ -1,13 +1,15 @@
 ---
 date: 2017-03-27T12:26:12+01:00
-title: Web Hooks
+title: Webhooks
 menu:
   main:
     parent: "Tyk Dashboard API"
+    identifier: tyk-dashboard-api-web-hooks
 weight: 7 
+url: "/tyk-dashboard-api/web-hooks"
 ---
 
-### List web hooks
+### List Webhooks
 
 | **Property** | **Description** |
 | ------------ | --------------- |
@@ -48,7 +50,7 @@ authorization:7a7b140f-2480-4d5a-4e78-24049e3ba7f8
 }
 ```
 
-### Get single web hook
+### Get a Single Webhook
 
 | **Property** | **Description**        |
 | ------------ | ---------------------- |
@@ -84,7 +86,7 @@ authorization:7a7b140f-2480-4d5a-4e78-24049e3ba7f8
 }
 ```
 
-### Add hook
+### Add a Webhook
 
 | **Property** | **Description** |
 | ------------ | --------------- |
@@ -121,7 +123,7 @@ authorization:7a7b140f-2480-4d5a-4e78-24049e3ba7f8
 }
 ```
 
-### Update hook
+### Update a Webhook
 
 | **Property** | **Description**        |
 | ------------ | ---------------------- |
@@ -163,7 +165,7 @@ authorization:7a7b140f-2480-4d5a-4e78-24049e3ba7f8
 }
 ```
 
-### Delete web hook
+### Delete a Webhook
 
 | **Property** | **Description**           |
 | ------------ | ------------------------- |
