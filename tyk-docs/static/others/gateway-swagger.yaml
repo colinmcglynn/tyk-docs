@@ -950,6 +950,29 @@ paths:
               example:
                 code: MWY0ZDRkMzktOTYwNi00NDRiLTk2YmQtOWQxOGQ3Mjc5Yzdk
                 redirect_to: 'http://client-app.com/oauth-redirect/?code=MWY0ZDRkMzktOTYwNi00NDRiLTk2YmQtOWQxOGQ3Mjc5Yzdk'
+    '/tyk/oauth/clients/{apiID}':
+    put:
+      summary: Update OAuth metadata
+      description: Allows you to update the metadata for an OAuth client.
+      tags:
+        - OAuth
+      operationId: listOAuthClients
+      parameters:
+        - description: The API ID
+          name: apiID
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OAuth client metadata updated
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/NewClientRequest'
   /tyk/org/keys:
     get:
       summary: List Organisation Keys
