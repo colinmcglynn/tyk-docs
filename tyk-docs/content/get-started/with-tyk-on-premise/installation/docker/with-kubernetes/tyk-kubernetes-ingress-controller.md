@@ -114,7 +114,7 @@ The controller has two key components:
 1. An ingress manager
 2. A service mesh webhook listener
 
-When Tyk is first installed via the helm chart, it will in stall itself as a DaemonSet and acquire a random node-port for it's service. The service is exposed as an External Load Balancer, which will trigger your cloud environment to provision one and add the exposed Tyk Gateways to it's backend list.
+When Tyk is first installed via the helm chart, it will install itself as a DaemonSet and acquire a random node-port for it's service. The service is exposed as an External Load Balancer, which will trigger your cloud environment to provision one and add the exposed Tyk Gateways to it's backend list.
 
 This means that the gateways are now exposed to the outside of your cluster through a load balancer provisioned by your cloud environment.
 
